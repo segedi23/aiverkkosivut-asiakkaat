@@ -3,28 +3,28 @@ import { Flame, Settings, PaintBucket, Package, Lightbulb, Wrench } from 'lucide
 export const business = {
   brandName: 'Palmet',
   legalName: 'Palosaaren Metalli Oy',
-  tagline: 'Täyden palvelun konepaja Koivulahdessa',
+  tagline: 'TÃ¤yden palvelun konepaja Koivulahdessa',
   city: 'Koivulahti',
   district: '',
   addressStreet: 'Svarvarintie 3',
   postalCode: '66530',
   fullAddress: 'Svarvarintie 3, 66530 Koivulahti',
-  phoneDisplay: '(06) 2103 700',
-  phoneLink: 'tel:0621037000',
+  phoneDisplay: '(06) 2103 701',
+  phoneLink: 'tel:0621037010',
   email: 'info@palmet.fi',
   emailLink: 'mailto:info@palmet.fi',
   mapUrl: 'https://maps.google.com/?q=Svarvarintie+3+Koivulahti',
   facebook: '',
   intro:
-    'Palosaaren Metalli Oy on Koivulahdessa toimiva täyden palvelun konepaja. Tarjoamme hitsaus-, koneistus-, pintakäsittely- ja kokoonpanopalveluja sekä tuotekehitystä. Valmistamme myös omia tuotteita: seetirenkaat, äänenvaimentimet ja pumput. Asiakkainamme ovat mm. Logset ja Normet.',
-  openingSummary: 'Ma–Pe 7:00–16:00',
+    'Palosaaren Metalli Oy on Koivulahdessa toimiva tÃ¤yden palvelun konepaja. Tarjoamme hitsaus-, koneistus-, pintakÃ¤sittely- ja kokoonpanopalveluja sekÃ¤ tuotekehitystÃ¤. Valmistamme myÃ¶s omia tuotteita: seetirenkaat, Ã¤Ã¤nenvaimentimet ja pumput. Asiakkainamme ovat mm. Logset ja Normet.',
+  openingSummary: 'MaâPe 7:00â16:00',
   businessId: '',
   dropoffNote: '',
 }
 
 export const openingHours = [
-  { short: 'Ma–Pe', hours: '07:00–16:00' },
-  { short: 'La–Su', hours: 'Suljettu' },
+  { short: 'MaâPe', hours: '07:00â16:00' },
+  { short: 'LaâSu', hours: 'Suljettu' },
 ]
 
 export const services = [
@@ -32,31 +32,31 @@ export const services = [
     slug: 'hitsaus',
     name: 'Hitsaus',
     icon: Flame,
-    description: 'Järeät hitsaukset jopa 40 tonniin saakka. MIG, MAG, TIG ja puikkohitsaus. Sertifioidut hitsaajat.',
+    description: 'JÃ¤reÃ¤t hitsaukset jopa 40 tonniin saakka. MIG, MAG, TIG ja puikkohitsaus. Sertifioidut hitsaajat.',
   },
   {
     slug: 'koneistus',
     name: 'Koneistus',
     icon: Settings,
-    description: 'Suuret sorvaukset ja jyrsinnät. CNC- ja konventionaalinen koneistus vaativiin tarpeisiin.',
+    description: 'Suuret sorvaukset ja jyrsinnÃ¤t. CNC- ja konventionaalinen koneistus vaativiin tarpeisiin.',
   },
   {
     slug: 'pintakasittely',
-    name: 'Pintakäsittely',
+    name: 'PintakÃ¤sittely',
     icon: PaintBucket,
-    description: 'Pintakäsittely laadunvarmistuksella. Maalaus, sinkitys ja muut pintakäsittelymenetelmät.',
+    description: 'PintakÃ¤sittely laadunvarmistuksella. Maalaus, sinkitys ja muut pintakÃ¤sittelymenetelmÃ¤t.',
   },
   {
     slug: 'kokoonpano',
     name: 'Kokoonpano',
     icon: Package,
-    description: 'Suunnittelusta kokoonpanoon — kokonaisvaltainen alihankintapalvelu valmiiseen tuotteeseen asti.',
+    description: 'Suunnittelusta kokoonpanoon â kokonaisvaltainen alihankintapalvelu valmiiseen tuotteeseen asti.',
   },
   {
     slug: 'tuotekehitys',
     name: 'Tuotekehitys',
     icon: Lightbulb,
-    description: 'Tuotekehitys yhteistyössä asiakkaan kanssa. Prototyypeistä sarjatuotantoon.',
+    description: 'Tuotekehitys yhteistyÃ¶ssÃ¤ asiakkaan kanssa. PrototyypeistÃ¤ sarjatuotantoon.',
   },
   {
     slug: 'korjaukset',
@@ -74,8 +74,8 @@ export const pricingHighlights: { title: string; price: string; description: str
 
 export const processSteps = [
   {
-    title: 'Tarjouspyyntö',
-    description: 'Lähetä piirustukset tai kuvaile tarve. Annamme tarjouksen nopeasti.',
+    title: 'TarjouspyyntÃ¶',
+    description: 'LÃ¤hetÃ¤ piirustukset tai kuvaile tarve. Annamme tarjouksen nopeasti.',
   },
   {
     title: 'Suunnittelu ja valmistus',
@@ -89,26 +89,26 @@ export const processSteps = [
 
 export const faqItems = [
   {
-    question: 'Minkä kokoisia kappaleita valmistatte?',
-    answer: 'Suurimmat yksittäiset hitsattavat kappaleet ovat painoltaan jopa 40 tonnia. Koneistuksessa teemme suuretkin sorvaukset ja jyrsinnät.',
+    question: 'MinkÃ¤ kokoisia kappaleita valmistatte?',
+    answer: 'Suurimmat yksittÃ¤iset hitsattavat kappaleet ovat painoltaan jopa 40 tonnia. Koneistuksessa teemme suuretkin sorvaukset ja jyrsinnÃ¤t.',
   },
   {
-    question: 'Mitä omia tuotteita valmistatte?',
-    answer: 'Valmistamme seetirenkaat, pakokaasujen äänenvaimentimet, ilmaäänenvaimentimet, hitsauskiinnittimet, koneistuskiinnittimet ja jäähdytysvesipumput.',
+    question: 'MitÃ¤ omia tuotteita valmistatte?',
+    answer: 'Valmistamme seetirenkaat, pakokaasujen Ã¤Ã¤nenvaimentimet, ilmaÃ¤Ã¤nenvaimentimet, hitsauskiinnittimet, koneistuskiinnittimet ja jÃ¤Ã¤hdytysvesipumput.',
   },
   {
-    question: 'Keitä asiakkaitanne on?',
+    question: 'KeitÃ¤ asiakkaitanne on?',
     answer: 'Asiakkaitamme ovat mm. Logset ja Normet. Palvelemme laajasti teollisuuden alihankintana.',
   },
 ]
 
 export const ownProducts = [
-  { name: 'Seetirenkaat', description: 'Hitsauskiinnittimien seetirenkaat sarjatuotantoon ja yksittäiskappaleisiin.' },
-  { name: 'Pakokaasujen äänenvaimentimet', description: 'Pakokaasujen äänenvaimentimet teollisuuden prosesseihin.' },
-  { name: 'Ilmaäänenvaimentimet', description: 'Ilmaäänenvaimentimet paineilmajärjestelmiin.' },
-  { name: 'Hitsauskiinnittimet', description: 'Hitsauskiinnittimet sarjatuotantoon ja yksittäiskappaleisiin.' },
+  { name: 'Seetirenkaat', description: 'Hitsauskiinnittimien seetirenkaat sarjatuotantoon ja yksittÃ¤iskappaleisiin.' },
+  { name: 'Pakokaasujen Ã¤Ã¤nenvaimentimet', description: 'Pakokaasujen Ã¤Ã¤nenvaimentimet teollisuuden prosesseihin.' },
+  { name: 'IlmaÃ¤Ã¤nenvaimentimet', description: 'IlmaÃ¤Ã¤nenvaimentimet paineilmajÃ¤rjestelmiin.' },
+  { name: 'Hitsauskiinnittimet', description: 'Hitsauskiinnittimet sarjatuotantoon ja yksittÃ¤iskappaleisiin.' },
   { name: 'Koneistuskiinnittimet', description: 'Koneistuskiinnittimet CNC- ja konventionaaliseen koneistukseen.' },
-  { name: 'Jäähdytysvesipumput', description: 'Jäähdytysvesipumput teollisuuden prosesseihin.' },
+  { name: 'JÃ¤Ã¤hdytysvesipumput', description: 'JÃ¤Ã¤hdytysvesipumput teollisuuden prosesseihin.' },
 ]
 
 export const customerLogos = [
@@ -117,29 +117,29 @@ export const customerLogos = [
 ]
 
 export const galleryImages = [
-  { src: '/images/hitsaus-01.jpg', alt: 'Hitsaustyö konepajalla' },
-  { src: '/images/hitsaus-02.jpg', alt: 'Järeä hitsaus' },
+  { src: '/images/hitsaus-01.jpg', alt: 'HitsaustyÃ¶ konepajalla' },
+  { src: '/images/hitsaus-02.jpg', alt: 'JÃ¤reÃ¤ hitsaus' },
   { src: '/images/koneistus-01.jpg', alt: 'CNC-koneistus' },
-  { src: '/images/koneistus-02.jpg', alt: 'Sorvaustyö' },
-  { src: '/images/koneistus-03.jpg', alt: 'Jyrsintä' },
-  { src: '/images/kokoonpano-01.jpg', alt: 'Kokoonpanotyö' },
+  { src: '/images/koneistus-02.jpg', alt: 'SorvaustyÃ¶' },
+  { src: '/images/koneistus-03.jpg', alt: 'JyrsintÃ¤' },
+  { src: '/images/kokoonpano-01.jpg', alt: 'KokoonpanotyÃ¶' },
   { src: '/images/kokoonpano-04.jpg', alt: 'Tuotteen kokoonpano' },
   { src: '/images/kokoonpano-05.jpg', alt: 'Valmis kokoonpano' },
 ]
 
 export const companyStats = [
   { value: '1970', label: 'Perustettu' },
-  { value: '6,2 M€', label: 'Liikevaihto (2024)' },
-  { value: '40', label: 'Henkilöstö' },
+  { value: '6,2 Mâ¬', label: 'Liikevaihto (2024)' },
+  { value: '40', label: 'HenkilÃ¶stÃ¶' },
   { value: '30 %', label: 'Suora vienti' },
-  { value: '6 500 m²', label: 'Hallitila' },
+  { value: '6 500 mÂ²', label: 'Hallitila' },
   { value: '40 t', label: 'Nostokapasiteetti' },
   { value: '10 m', label: 'Koukkukorkeus' },
 ]
 
 export const team: { name: string; title: string; phone: string; phoneLink: string; email: string; photo: string | null }[] = [
   {
-    name: 'Juha Marjamäki',
+    name: 'Juha MarjamÃ¤ki',
     title: 'Johtaja, Myynti',
     phone: '0400 866 260',
     phoneLink: 'tel:0400866260',
@@ -156,7 +156,7 @@ export const team: { name: string; title: string; phone: string; phoneLink: stri
   },
   {
     name: 'Sami Holkko',
-    title: 'Tuotantopäällikkö',
+    title: 'TuotantopÃ¤Ã¤llikkÃ¶',
     phone: '0400 896 040',
     phoneLink: 'tel:0400896040',
     email: 'sami.holkko@palmet.fi',
@@ -180,7 +180,7 @@ export const team: { name: string; title: string; phone: string; phoneLink: stri
   },
   {
     name: 'Mika Hanhikoski',
-    title: 'Työnjohtaja, Hitsaus',
+    title: 'TyÃ¶njohtaja, Hitsaus',
     phone: '040 646 2166',
     phoneLink: 'tel:0406462166',
     email: 'mika.hanhikoski@palmet.fi',
@@ -188,7 +188,7 @@ export const team: { name: string; title: string; phone: string; phoneLink: stri
   },
   {
     name: 'Tero Laakso',
-    title: 'Työnjohtaja, Koneistus',
+    title: 'TyÃ¶njohtaja, Koneistus',
     phone: '045 351 9737',
     phoneLink: 'tel:0453519737',
     email: 'tero.laakso@palmet.fi',
@@ -203,8 +203,8 @@ export const team: { name: string; title: string; phone: string; phoneLink: stri
     photo: null,
   },
   {
-    name: 'Kalle Östergård',
-    title: 'Vastaanotto & lähettämö (7:00–15:30)',
+    name: 'Kalle ÃstergÃ¥rd',
+    title: 'Vastaanotto & lÃ¤hettÃ¤mÃ¶ (7:00â15:30)',
     phone: '040 6681 770',
     phoneLink: 'tel:0406681770',
     email: 'varasto@palmet.fi',
@@ -225,42 +225,42 @@ export const machineFleet = {
     {
       name: 'FPT AREA-EV8+TRT30-PT2530',
       specs: 'X=10000 Y=3500 Z=1500',
-      details: 'Pyöröpöytä 2500×3000 mm, max 30 t, 60 työkalua',
+      details: 'PyÃ¶rÃ¶pÃ¶ytÃ¤ 2500Ã3000 mm, max 30 t, 60 tyÃ¶kalua',
     },
-    { name: 'Fermat WFT 11', specs: 'X=3000 Y=2000 Z=1250 W=730', details: '10 000 kg, 60 työkalua' },
-    { name: 'MITSUI SEIKI', specs: 'X=1200 Y=1200 Z=900', details: '120 työkalua, 1600 kg, 6× 800×800 palettia' },
-    { name: 'SCHARMANN ECOCUT 2', specs: 'X=2500 Y=2000 Z=900 W=800', details: '6000 kg, 55 työkalua' },
+    { name: 'Fermat WFT 11', specs: 'X=3000 Y=2000 Z=1250 W=730', details: '10 000 kg, 60 tyÃ¶kalua' },
+    { name: 'MITSUI SEIKI', specs: 'X=1200 Y=1200 Z=900', details: '120 tyÃ¶kalua, 1600 kg, 6Ã 800Ã800 palettia' },
+    { name: 'SCHARMANN ECOCUT 2', specs: 'X=2500 Y=2000 Z=900 W=800', details: '6000 kg, 55 tyÃ¶kalua' },
   ],
   cncVertical: [
     { name: 'Hyundai Wia F650/50', specs: 'X=1400 Y=660 Z=635', details: '1300 kg' },
     { name: 'MAZAK', specs: 'X=1120 Y=510 Z=510', details: '800 kg' },
   ],
   cncLathes: [
-    { name: '3× MAZAK QUICK-TURN 30 N', specs: 'Ø 400 × 1016 mm', details: '' },
-    { name: 'MAZAK QUICKTURN 250L', specs: 'Ø 380 × 502 mm', details: '' },
-    { name: 'MAZAK QUICK-TURN 10 N', specs: 'Ø 200 × 500 mm', details: '' },
-    { name: 'MAZAK QUICK-TURN 28 U', specs: 'Ø 400 × 1000 mm', details: '' },
+    { name: '3Ã MAZAK QUICK-TURN 30 N', specs: 'Ã 400 Ã 1016 mm', details: '' },
+    { name: 'MAZAK QUICKTURN 250L', specs: 'Ã 380 Ã 502 mm', details: '' },
+    { name: 'MAZAK QUICK-TURN 10 N', specs: 'Ã 200 Ã 500 mm', details: '' },
+    { name: 'MAZAK QUICK-TURN 28 U', specs: 'Ã 400 Ã 1000 mm', details: '' },
   ],
   manualLathes: [
-    { name: 'HEID CNC', specs: 'Ø 800 × 3000 mm', details: '' },
-    { name: 'SASTA SAC 150', specs: 'Ø 300 × 1500 mm', details: '' },
-    { name: '1M63B', specs: 'Ø 315 × 3000 mm', details: '' },
-    { name: 'BULLARD Carousel', specs: 'Ø 1500 × 1000 mm', details: '' },
+    { name: 'HEID CNC', specs: 'Ã 800 Ã 3000 mm', details: '' },
+    { name: 'SASTA SAC 150', specs: 'Ã 300 Ã 1500 mm', details: '' },
+    { name: '1M63B', specs: 'Ã 315 Ã 3000 mm', details: '' },
+    { name: 'BULLARD Carousel', specs: 'Ã 1500 Ã 1000 mm', details: '' },
   ],
   sheetMetal: [
-    { name: 'JAROMET levyleikkuri', specs: '16×4000 mm', details: '' },
+    { name: 'JAROMET levyleikkuri', specs: '16Ã4000 mm', details: '' },
     { name: 'STM-PULLMAX, BIKO mankelointikoneet', specs: '', details: '' },
-    { name: 'PEARSON särmäyspuristin', specs: '300 tonnia', details: '' },
-    { name: 'LVD CNC särmäyspuristin', specs: '35 tonnia', details: '' },
+    { name: 'PEARSON sÃ¤rmÃ¤yspuristin', specs: '300 tonnia', details: '' },
+    { name: 'LVD CNC sÃ¤rmÃ¤yspuristin', specs: '35 tonnia', details: '' },
   ],
   welding: [
-    { name: 'Fanuc M-710iC robotti', specs: 'Pyöröpöytä', details: '' },
-    { name: 'MOTOMAN XRC robotti', specs: 'Tuplakääntöpöydät', details: '' },
+    { name: 'Fanuc M-710iC robotti', specs: 'PyÃ¶rÃ¶pÃ¶ytÃ¤', details: '' },
+    { name: 'MOTOMAN XRC robotti', specs: 'TuplakÃ¤Ã¤ntÃ¶pÃ¶ydÃ¤t', details: '' },
     { name: 'ESAB MKR 300 torni', specs: '800A jauhekaarihitsaus', details: '' },
   ],
   support: [
-    { name: 'Pyörittäjärullastot (10 kpl)', specs: '4–8 tonnia', details: '' },
-    { name: 'Pyöröpöydät (useita)', specs: '600–5000 kg', details: '' },
+    { name: 'PyÃ¶rittÃ¤jÃ¤rullastot (10 kpl)', specs: '4â8 tonnia', details: '' },
+    { name: 'PyÃ¶rÃ¶pÃ¶ydÃ¤t (useita)', specs: '600â5000 kg', details: '' },
     { name: 'DEA MISTRAL koordinaattimittauskone', specs: '3D-mittaus', details: '' },
   ],
 }
@@ -268,62 +268,62 @@ export const machineFleet = {
 export const historyTimeline = [
   {
     year: 1970,
-    text: 'Pentti Syrjälä perustaa yrityksen 1.12.1970. Kaksi työntekijää Vaasan Palosaaren kaupunginosassa.',
+    text: 'Pentti SyrjÃ¤lÃ¤ perustaa yrityksen 1.12.1970. Kaksi tyÃ¶ntekijÃ¤Ã¤ Vaasan Palosaaren kaupunginosassa.',
   },
   {
     year: 1972,
-    text: 'Ensimmäinen iso projekti — matkustajien noususilta ruotsalaislaivaan Vaskiluodon satamassa.',
+    text: 'EnsimmÃ¤inen iso projekti â matkustajien noususilta ruotsalaislaivaan Vaskiluodon satamassa.',
   },
   {
     year: 1973,
-    text: 'Yhteistyö Wärtsilän kanssa alkaa. Dieselmoottorien äänenvaimentimia, parhaimmillaan 500 kpl/vuosi vuoteen 2000 asti.',
+    text: 'YhteistyÃ¶ WÃ¤rtsilÃ¤n kanssa alkaa. Dieselmoottorien Ã¤Ã¤nenvaimentimia, parhaimmillaan 500 kpl/vuosi vuoteen 2000 asti.',
   },
   {
     year: 1981,
-    text: 'Muutto Vähäkyröön. Vaasan majakka (16,3 m korkea) rakennetaan, kuljetetaan ja asennetaan merelle.',
+    text: 'Muutto VÃ¤hÃ¤kyrÃ¶Ã¶n. Vaasan majakka (16,3 m korkea) rakennetaan, kuljetetaan ja asennetaan merelle.',
   },
   {
     year: 1993,
-    text: 'Osittainen muutto Koivulahteen, Mustasaareen. Vähäkyrön tuotanto loppuu 2002.',
+    text: 'Osittainen muutto Koivulahteen, Mustasaareen. VÃ¤hÃ¤kyrÃ¶n tuotanto loppuu 2002.',
   },
-  { year: 2002, text: 'Yhteistyö Normetin kanssa (Iisalmi). Kasvaa noin kolmasosaan liikevaihdosta.' },
+  { year: 2002, text: 'YhteistyÃ¶ Normetin kanssa (Iisalmi). Kasvaa noin kolmasosaan liikevaihdosta.' },
   {
     year: 2004,
     text: 'Generaattorikomponentteja suurille suoravetoisille tuuliturbiineille (~4 MW) The Switch/ScanWindille (Norja), GE Energyn yritysostoon asti (2007).',
   },
-  { year: 2007, text: 'Logset-yhteistyö alkaa (naapuriyritys). Noin kolmasosa liikevaihdosta.' },
+  { year: 2007, text: 'Logset-yhteistyÃ¶ alkaa (naapuriyritys). Noin kolmasosa liikevaihdosta.' },
   {
     year: 2014,
-    text: 'LangTechin pakokaasupesureita — yrityksen historian merkittävin yksittäistilaus.',
+    text: 'LangTechin pakokaasupesureita â yrityksen historian merkittÃ¤vin yksittÃ¤istilaus.',
   },
   { year: 2017, text: 'Johdon uudistaminen, "Muutos 2017" kehitysohjelma.' },
 ]
 
 export const certifications = [
-  { name: 'ISO 9001:2015', description: 'Laadunhallintajärjestelmä' },
-  { name: 'ISO 14001:2015', description: 'Ympäristöjärjestelmä' },
-  { name: 'OHSAS 18001', description: 'Työterveys ja -turvallisuus' },
-  { name: 'IIW International Welding Specialists', description: 'Kansainvälinen hitsausasiantuntijuus' },
+  { name: 'ISO 9001:2015', description: 'LaadunhallintajÃ¤rjestelmÃ¤' },
+  { name: 'ISO 14001:2015', description: 'YmpÃ¤ristÃ¶jÃ¤rjestelmÃ¤' },
+  { name: 'OHSAS 18001', description: 'TyÃ¶terveys ja -turvallisuus' },
+  { name: 'IIW International Welding Specialists', description: 'KansainvÃ¤linen hitsausasiantuntijuus' },
 ]
 
 export const jobOpenings = [
   {
     title: 'CNC-koneistaja',
-    tasks: ['Koneistustyöt', 'Ohjelmointi', 'Asetteenvaihto'],
+    tasks: ['KoneistustyÃ¶t', 'Ohjelmointi', 'Asetteenvaihto'],
     requirements: ['Usean vuoden CNC-kokemus', 'Tekniikka, koneet ja materiaalit', 'Piirustusten luku'],
-    benefits: ['Vakituinen kokopäivätyö', 'Moderni ympäristö', 'Ajanmukainen kalusto', 'Kehittymismahdollisuudet'],
+    benefits: ['Vakituinen kokopÃ¤ivÃ¤tyÃ¶', 'Moderni ympÃ¤ristÃ¶', 'Ajanmukainen kalusto', 'Kehittymismahdollisuudet'],
   },
   {
     title: 'Robottihitsaaja',
     tasks: ['Robottihitsaus', 'Ohjelmointi', 'Asetteenvaihto'],
     requirements: ['Fanuc tai Motoman -kokemus', 'Piirustusten luku'],
-    benefits: ['Vakituinen kokopäivätyö', 'Moderni ympäristö', 'Ajanmukainen kalusto', 'Kehittymismahdollisuudet'],
+    benefits: ['Vakituinen kokopÃ¤ivÃ¤tyÃ¶', 'Moderni ympÃ¤ristÃ¶', 'Ajanmukainen kalusto', 'Kehittymismahdollisuudet'],
   },
   {
     title: 'Hitsaaja',
-    tasks: ['Ohutlevytyöt ja hitsaus'],
+    tasks: ['OhutlevytyÃ¶t ja hitsaus'],
     requirements: ['Hitsauskokemus tai halu oppia', 'Piirustusten luku'],
-    benefits: ['Vakituinen kokopäivätyö', 'Moderni ympäristö', 'Ajanmukainen kalusto', 'Kehittymismahdollisuudet'],
+    benefits: ['Vakituinen kokopÃ¤ivÃ¤tyÃ¶', 'Moderni ympÃ¤ristÃ¶', 'Ajanmukainen kalusto', 'Kehittymismahdollisuudet'],
   },
 ]
 
