@@ -2,33 +2,81 @@
   {
     "slug": "palosaaren-metalli",
     "domain": "palmet.fi",
-    "businessName": "Palosaaren Metalli Oy (Palmet)",
+    "businessName": "Palosaaren Metalli Oy",
+    "authorizedEmails": [
+      "juha.marjamaki@palmet.fi",
+      "info@palmet.fi",
+      "jukka.hankonen@palmet.fi"
+    ],
+    "repoPath": "sites/palosaaren-metalli",
+    "siteContentPath": "sites/palosaaren-metalli/src/data/siteContent.ts",
+    "liveUrl": "https://palmet.fi",
     "industry": "konepaja",
-    "netlifySiteId": "aiverkkosivut-palosaaren-metalli",
-    "siteContentUrl": "https://raw.githubusercontent.com/segedi23/aiverkkosivut-asiakkaat/main/sites/palosaaren-metalli/src/data/siteContent.ts"
+    "safeFields": [
+      "business.phoneDisplay", "business.phoneLink",
+      "business.email", "business.emailLink",
+      "business.addressStreet", "business.postalCode", "business.fullAddress",
+      "business.mapUrl", "business.facebook", "business.openingSummary",
+      "openingHours", "business.tagline", "business.intro"
+    ]
   },
   {
     "slug": "kuljetusliike-lindgren",
     "domain": "kuljetusliikelindgren.fi",
     "businessName": "Kuljetusliike Lindgren Oy",
+    "authorizedEmails": [
+      "jan@kuljetusliikelindgren.fi",
+      "annika@kuljetusliikelindgren.fi",
+      "mika@kuljetusliikelindgren.fi"
+    ],
+    "repoPath": "sites/kuljetusliike-lindgren",
+    "siteContentPath": "sites/kuljetusliike-lindgren/src/data/siteContent.ts",
+    "liveUrl": "https://kuljetusliikelindgren.fi",
     "industry": "kuljetus",
-    "netlifySiteId": "aiverkkosivut-kuljetusliike-lindgren",
-    "siteContentUrl": "https://raw.githubusercontent.com/segedi23/aiverkkosivut-asiakkaat/main/sites/kuljetusliike-lindgren/src/data/siteContent.ts"
+    "safeFields": [
+      "business.phoneDisplay", "business.phoneLink",
+      "business.email", "business.emailLink",
+      "business.addressStreet", "business.postalCode", "business.fullAddress",
+      "business.mapUrl", "business.facebook", "business.openingSummary",
+      "openingHours", "business.tagline", "business.intro"
+    ]
   },
   {
     "slug": "rm-hitsaamo",
     "domain": "rm-hitsaamo.fi",
     "businessName": "RM-Hitsaamo Oy",
+    "authorizedEmails": [
+      "info@rm-hitsaamo.fi"
+    ],
+    "repoPath": "sites/rm-hitsaamo",
+    "siteContentPath": "sites/rm-hitsaamo/src/data/siteContent.ts",
+    "liveUrl": "https://rm-hitsaamo.fi",
     "industry": "terasrakentaminen",
-    "netlifySiteId": "aiverkkosivut-rm-hitsaamo",
-    "siteContentUrl": "https://raw.githubusercontent.com/segedi23/aiverkkosivut-asiakkaat/main/sites/rm-hitsaamo/src/data/siteContent.ts"
+    "safeFields": [
+      "business.phoneDisplay", "business.phoneLink",
+      "business.email", "business.emailLink",
+      "business.addressStreet", "business.postalCode", "business.fullAddress",
+      "business.mapUrl", "business.facebook", "business.openingSummary",
+      "openingHours", "business.tagline", "business.intro"
+    ]
   },
   {
     "slug": "sbs-innovation",
     "domain": "sbsi.fi",
     "businessName": "SBS Innovation Oy",
+    "authorizedEmails": [
+      "info@sbsi.fi"
+    ],
+    "repoPath": "sites/sbs-innovation",
+    "siteContentPath": "sites/sbs-innovation/src/data/siteContent.ts",
+    "liveUrl": "https://sbsi.fi",
     "industry": "automaalaamo",
-    "netlifySiteId": "aiverkkosivut-sbs-innovation",
-    "siteContentUrl": "https://raw.githubusercontent.com/segedi23/aiverkkosivut-asiakkaat/main/sites/sbs-innovation/src/data/siteContent.ts"
+    "safeFields": [
+      "business.phoneDisplay", "business.phoneLink",
+      "business.email", "business.emailLink",
+      "business.addressStreet", "business.postalCode", "business.fullAddress",
+      "business.mapUrl", "business.facebook", "business.openingSummary",
+      "openingHours", "business.tagline", "business.intro"
+    ]
   }
 ]
