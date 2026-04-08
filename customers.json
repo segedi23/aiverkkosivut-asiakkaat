@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "palosaaren-metalli",
+    "domain": "palmet.fi",
+    "businessName": "Palosaaren Metalli Oy (Palmet)",
+    "industry": "konepaja",
+    "netlifySiteId": "aiverkkosivut-palosaaren-metalli",
+    "siteContentUrl": "https://raw.githubusercontent.com/segedi23/aiverkkosivut-asiakkaat/main/sites/palosaaren-metalli/src/data/siteContent.ts"
+  },
+  {
+    "slug": "kuljetusliike-lindgren",
+    "domain": "kuljetusliikelindgren.fi",
+    "businessName": "Kuljetusliike Lindgren Oy",
+    "industry": "kuljetus",
+    "netlifySiteId": "aiverkkosivut-kuljetusliike-lindgren",
+    "siteContentUrl": "https://raw.githubusercontent.com/segedi23/aiverkkosivut-asiakkaat/main/sites/kuljetusliike-lindgren/src/data/siteContent.ts"
+  },
+  {
+    "slug": "rm-hitsaamo",
+    "domain": "rm-hitsaamo.fi",
+    "businessName": "RM-Hitsaamo Oy",
+    "industry": "terasrakentaminen",
+    "netlifySiteId": "aiverkkosivut-rm-hitsaamo",
+    "siteContentUrl": "https://raw.githubusercontent.com/segedi23/aiverkkosivut-asiakkaat/main/sites/rm-hitsaamo/src/data/siteContent.ts"
+  },
+  {
+    "slug": "sbs-innovation",
+    "domain": "sbsi.fi",
+    "businessName": "SBS Innovation Oy",
+    "industry": "automaalaamo",
+    "netlifySiteId": "aiverkkosivut-sbs-innovation",
+    "siteContentUrl": "https://raw.githubusercontent.com/segedi23/aiverkkosivut-asiakkaat/main/sites/sbs-innovation/src/data/siteContent.ts"
+  }
+]
