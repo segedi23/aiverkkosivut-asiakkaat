@@ -1,0 +1,90 @@
+name: Build and deploy changed sites
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sites/**'
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Site slug to rebuild (empty = all)'
+        required: false
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    outputs:
+      slugs: ${{ steps.detect.outputs.slugs }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - id: detect
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.slug }}" ]; then
+            echo "slugs=[\"${{ github.event.inputs.slug }}\"]" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          # Find unique site slugs touched by this push
+          changed=$(git diff --name-only HEAD^ HEAD 2>/dev/null || git diff --name-only HEAD HEAD)
+          slugs=$(echo "$changed" | awk -F/ '/^sites\// {print $2}' | sort -u | jq -R -s -c 'split("\n")|map(select(length>0))')
+          if [ -z "$slugs" ] || [ "$slugs" = "[]" ]; then
+            slugs='[]'
+          fi
+          echo "slugs=$slugs" >> $GITHUB_OUTPUT
+          echo "Detected slugs: $slugs"
+
+  build-deploy:
+    needs: detect
+    if: needs.detect.outputs.slugs != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        slug: ${{ fromJson(needs.detect.outputs.slugs) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Resolve Netlify site ID
+        id: site
+        shell: bash
+        run: |
+          case "${{ matrix.slug }}" in
+            palosaaren-metalli)      id=f108be47-9ace-42ee-b685-46cde9de050f ;;
+            kuljetusliike-lindgren)  id=a870255d-72fb-46d9-acd7-985797bc3205 ;;
+            rm-hitsaamo)             id=ace7f2e0-0d10-4cec-9aea-f7e3193572c6 ;;
+            sbs-innovation)          id=1f1501ef-bc65-4820-b584-2c8a993ee53e ;;
+            *)
+              echo "Unknown slug: ${{ matrix.slug }}"
+              exit 1 ;;
+          esac
+          echo "id=$id" >> $GITHUB_OUTPUT
+
+      - name: Install dependencies
+        working-directory: sites/${{ matrix.slug }}
+        run: npm ci --no-audit --no-fund 2>/dev/null || npm install --no-audit --no-fund
+
+      - name: Build
+        working-directory: sites/${{ matrix.slug }}
+        run: npm run build
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3.0
+        with:
+          publish-dir: sites/${{ matrix.slug }}/dist
+          production-deploy: true
+          deploy-message: "commit ${{ github.sha }}: ${{ github.event.head_commit.message }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          enable-pull-request-comment: false
+          enable-commit-comment: false
+          enable-commit-status: false
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ steps.site.outputs.id }}
