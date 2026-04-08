@@ -27,7 +27,8 @@
       "business.intro"
     ],
     "targetDomain": "https://palmet.fi",
-    "previewUrl": "https://palmet.aiverkkosivut.fi"
+    "previewUrl": "https://palmet.aiverkkosivut.fi",
+    "netlifySiteId": "f108be47-9ace-42ee-b685-46cde9de050f"
   },
   {
     "slug": "kuljetusliike-lindgren",
@@ -57,7 +58,8 @@
       "business.intro"
     ],
     "targetDomain": "https://kuljetusliikelindgren.fi",
-    "previewUrl": "https://lindgren.aiverkkosivut.fi"
+    "previewUrl": "https://lindgren.aiverkkosivut.fi",
+    "netlifySiteId": "a870255d-72fb-46d9-acd7-985797bc3205"
   },
   {
     "slug": "rm-hitsaamo",
@@ -85,7 +87,8 @@
       "business.intro"
     ],
     "targetDomain": "https://rm-hitsaamo.fi",
-    "previewUrl": "https://rm.aiverkkosivut.fi"
+    "previewUrl": "https://rm.aiverkkosivut.fi",
+    "netlifySiteId": "ace7f2e0-0d10-4cec-9aea-f7e3193572c6"
   },
   {
     "slug": "sbs-innovation",
@@ -113,6 +116,7 @@
       "business.intro"
     ],
     "targetDomain": "https://sbsi.fi",
-    "previewUrl": "https://sbs.aiverkkosivut.fi"
+    "previewUrl": "https://sbs.aiverkkosivut.fi",
+    "netlifySiteId": "1f1501ef-bc65-4820-b584-2c8a993ee53e"
   }
 ]

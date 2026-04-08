@@ -5,10 +5,11 @@ on:
     branches: [main]
     paths:
       - 'sites/**'
+      - 'customers.json'
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Site slug to rebuild (empty = all)'
+        description: 'Site slug to rebuild (empty = all changed)'
         required: false
 
 jobs:
@@ -28,12 +29,9 @@ jobs:
             echo "slugs=[\"${{ github.event.inputs.slug }}\"]" >> $GITHUB_OUTPUT
             exit 0
           fi
-          # Find unique site slugs touched by this push
           changed=$(git diff --name-only HEAD^ HEAD 2>/dev/null || git diff --name-only HEAD HEAD)
           slugs=$(echo "$changed" | awk -F/ '/^sites\// {print $2}' | sort -u | jq -R -s -c 'split("\n")|map(select(length>0))')
-          if [ -z "$slugs" ] || [ "$slugs" = "[]" ]; then
-            slugs='[]'
-          fi
+          if [ -z "$slugs" ] || [ "$slugs" = "[]" ]; then slugs='[]'; fi
           echo "slugs=$slugs" >> $GITHUB_OUTPUT
           echo "Detected slugs: $slugs"
 
@@ -52,20 +50,17 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Resolve Netlify site ID
+      - name: Resolve Netlify site ID from customers.json
         id: site
         shell: bash
         run: |
-          case "${{ matrix.slug }}" in
-            palosaaren-metalli)      id=f108be47-9ace-42ee-b685-46cde9de050f ;;
-            kuljetusliike-lindgren)  id=a870255d-72fb-46d9-acd7-985797bc3205 ;;
-            rm-hitsaamo)             id=ace7f2e0-0d10-4cec-9aea-f7e3193572c6 ;;
-            sbs-innovation)          id=1f1501ef-bc65-4820-b584-2c8a993ee53e ;;
-            *)
-              echo "Unknown slug: ${{ matrix.slug }}"
-              exit 1 ;;
-          esac
+          id=$(jq -r --arg slug "${{ matrix.slug }}" '.[] | select(.slug==$slug) | .netlifySiteId // empty' customers.json)
+          if [ -z "$id" ]; then
+            echo "::error::No netlifySiteId for slug ${{ matrix.slug }} in customers.json"
+            exit 1
+          fi
           echo "id=$id" >> $GITHUB_OUTPUT
+          echo "Resolved ${{ matrix.slug }} → $id"
 
       - name: Install dependencies
         working-directory: sites/${{ matrix.slug }}
