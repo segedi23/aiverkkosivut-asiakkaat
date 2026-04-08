@@ -10,7 +10,7 @@ export const business = {
   postalCode: '66530',
   fullAddress: 'Svarvarintie 3, 66530 Koivulahti',
   phoneDisplay: '(06) 2103 700',
-  phoneLink: 'tel:0621037000',
+  phoneLink: 'tel:062103700',
   email: 'info@palmet.fi',
   emailLink: 'mailto:info@palmet.fi',
   mapUrl: 'https://maps.google.com/?q=Svarvarintie+3+Koivulahti',
