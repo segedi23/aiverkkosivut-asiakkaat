@@ -13,32 +13,28 @@ function Header() {
 
   return (
     <div className="sticky top-0 z-50">
-      <div className="bg-[var(--bg-dark)] text-[var(--brand-accent)]">
-        <div className="shell py-2 text-center text-xs font-medium tracking-wide">
-          Ma–Pe 8–16 · Kiuruvesi · Perheyritys vuodesta 1976
+      <div className="bg-[#1F1E1F] text-white/85">
+        <div className="shell flex items-center justify-between gap-4 py-2 text-xs font-medium">
+          <span>Ma–Pe 8–16 · Kiuruvesi · Perheyritys vuodesta 1976</span>
+          <a
+            href={business.emailLink}
+            className="hidden text-white/70 hover:text-white sm:inline-block"
+          >
+            {business.email}
+          </a>
         </div>
       </div>
 
-      <header className="border-b border-[var(--line)] bg-[var(--surface-light)]/95 backdrop-blur">
-        <div className="shell flex h-18 items-center justify-between gap-4 py-2">
-          <Link to="/" className="shrink-0 group" aria-label="Autokossi etusivu">
-            <div className="flex items-center gap-3">
-              <span className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-[var(--brand-primary)] text-white shadow-sm transition-transform group-hover:scale-105">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                  <path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/>
-                  <circle cx="6.5" cy="16.5" r="2.5"/>
-                  <circle cx="16.5" cy="16.5" r="2.5"/>
-                </svg>
-              </span>
-              <span className="flex flex-col leading-none">
-                <span className="font-heading text-xl font-bold tracking-wider text-[var(--text-strong)]">
-                  AUTOKOSSI
-                </span>
-                <span className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-[var(--brand-accent)]">
-                  Kiuruvesi · 1976
-                </span>
-              </span>
-            </div>
+      {/* Main header — tumma kuten alkuperäisessä sivussa (#39383A). Valkoinen
+          Autokossi-logo näkyy luonnollisesti tummalla pohjalla. */}
+      <header className="bg-[#39383A] text-white">
+        <div className="shell flex h-20 items-center justify-between gap-4">
+          <Link to="/" className="shrink-0" aria-label="Autokossi etusivu">
+            <img
+              src="/images/logo.png"
+              alt="Autokossi — Kori- ja Konekorjaamo Kossi Ky"
+              className="h-9 w-auto"
+            />
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">
@@ -49,10 +45,10 @@ function Header() {
                 end={item.to === '/'}
                 className={({ isActive }) =>
                   [
-                    'rounded-full px-4 py-2 text-sm font-semibold transition-colors',
+                    'rounded-md px-4 py-2 text-sm font-semibold transition-colors',
                     isActive
-                      ? 'bg-[var(--brand-primary-soft)] text-[var(--brand-primary)]'
-                      : 'text-[var(--text-body)] hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)]',
+                      ? 'bg-[var(--brand-primary-dark)] text-white'
+                      : 'text-white/85 hover:bg-white/10 hover:text-white',
                   ].join(' ')
                 }
               >
@@ -71,7 +67,7 @@ function Header() {
 
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[var(--line)] bg-white text-[var(--text-strong)] lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/30 bg-white/10 text-white lg:hidden"
             onClick={() => setOpen((value) => !value)}
             aria-label={open ? 'Sulje valikko' : 'Avaa valikko'}
           >

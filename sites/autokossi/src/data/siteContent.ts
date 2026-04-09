@@ -30,6 +30,7 @@ export const business = {
 export const navigation = [
   { label: 'Etusivu', to: '/' },
   { label: 'Palvelut', to: '/palvelut' },
+  { label: 'Vaihtoautot', to: '/vaihtoautot' },
   { label: 'Varaosat', to: '/varaosat' },
   { label: 'Rahoitus', to: '/rahoitus' },
   { label: 'Ajanvaraus', to: '/ajanvaraus' },

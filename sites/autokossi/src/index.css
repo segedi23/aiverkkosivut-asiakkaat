@@ -1,19 +1,25 @@
 @import 'tailwindcss';
 
 :root {
-  --brand-primary: #0f3a5f;
-  --brand-primary-dark: #0a2540;
-  --brand-primary-soft: #e7eef5;
-  --brand-accent: #e67e22;
-  --brand-accent-dark: #c2651a;
-  --page-bg: #f7f5f1;
-  --bg-dark: #0b1a2b;
-  --surface-soft: #f1ede5;
+  /* Autokossin alkuperäiset brändivärit suoraan vanhalta autokossi.fi CSS:stä:
+     - body bg #39383A (tumma harmaa), nav bg #1F1E1F (musta)
+     - otsikot #3A6683, linkit #427798, hover #AEB7C8
+     - ylävalikko gradientti #3A8CC0 → #2F6081, slogan valkoinen
+  */
+  --brand-primary: #3A8CC0;        /* pääsininen (header-gradientin yläosa) */
+  --brand-primary-dark: #2F6081;   /* tummempi sininen (header-gradientin alaosa) */
+  --brand-primary-soft: #e6eff6;   /* softti versio taustoille */
+  --brand-accent: #427798;         /* linkki-väri */
+  --brand-accent-dark: #3A6683;    /* otsikko-väri */
+  --page-bg: #f5f6f8;              /* hyvin vaalea neutraali */
+  --bg-dark: #1F1E1F;              /* alkuperäinen nav-bg musta */
+  --bg-dark-alt: #39383A;          /* alkuperäinen body-bg tumma harmaa */
+  --surface-soft: #eef2f6;
   --surface-light: #ffffff;
-  --text-strong: #0a1929;
-  --text-body: #394b5e;
-  --text-muted: #6c7a8a;
-  --line: #e2dcd1;
+  --text-strong: #3A6683;          /* sama kuin otsikot */
+  --text-body: #4a5763;            /* leipäteksti */
+  --text-muted: #8794a1;
+  --line: #d7dde4;
   --font-display: 'Oswald', 'Barlow Condensed', sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
 
