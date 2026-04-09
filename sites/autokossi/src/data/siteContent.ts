@@ -32,6 +32,7 @@ export const navigation = [
   { label: 'Palvelut', to: '/palvelut' },
   { label: 'Varaosat', to: '/varaosat' },
   { label: 'Rahoitus', to: '/rahoitus' },
+  { label: 'Ajanvaraus', to: '/ajanvaraus' },
   { label: 'Yhteystiedot', to: '/yhteystiedot' },
 ]
 

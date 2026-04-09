@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import PalvelutPage from './pages/PalvelutPage'
 import VaraosatPage from './pages/VaraosatPage'
 import RahoitusPage from './pages/RahoitusPage'
+import AjanvarausPage from './pages/AjanvarausPage'
 import YhteystiedotPage from './pages/YhteystiedotPage'
 import NotFoundPage from './pages/NotFoundPage'
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="palvelut" element={<PalvelutPage />} />
         <Route path="varaosat" element={<VaraosatPage />} />
         <Route path="rahoitus" element={<RahoitusPage />} />
+        <Route path="ajanvaraus" element={<AjanvarausPage />} />
         <Route path="yhteystiedot" element={<YhteystiedotPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
