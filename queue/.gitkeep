@@ -1,0 +1,3 @@
+# Queue directory — onboarding-Worker commitoi tänne <slug>.md -tiedostoja.
+# Claude Code -session lukee nämä ja tekee sivustot. Kun sivusto on valmis,
+# Claude Code poistaa tiedoston ja committoi sites/<slug>/-kansion.
