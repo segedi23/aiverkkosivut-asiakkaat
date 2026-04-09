@@ -1,0 +1,3 @@
+# React SPA — kaikki reitit palvellaan index.html:llä
+# jotta React Router hoitaa asiakassivun navigoinnin
+/* /index.html 200
