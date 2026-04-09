@@ -16,7 +16,7 @@ function HomePage() {
   return (
     <>
       <Seo
-        title="Autokossi — Autokorjaamo, varaosat ja rahoitus Kiuruvedellä"
+        title="Autokossi | Autokorjaamo, varaosat ja rahoitus Kiuruvedellä"
         description="Kori- ja Konekorjaamo Kossi Ky palvelee Kiuruvedellä autohuolloissa, korjauksissa ja varaosissa jo 49 vuoden kokemuksella."
         structuredData={localBusinessSchema}
       />
@@ -38,12 +38,12 @@ function HomePage() {
             Kiuruvesi · Autokorjaamo · Vuodesta 1976
           </p>
           <h1 className="mt-4 max-w-3xl font-[var(--font-display)] text-5xl leading-tight sm:text-6xl">
-            Sama korjaamo, sama yrittäjä — vuodesta 1976
+            Sama korjaamo, sama yrittäjä vuodesta 1976
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
             Kori- ja Konekorjaamo Kossi Ky palvelee Kiuruveden autoilijoita jo
-            neljättä vuosikymmentä. Autot, traktorit ja työkoneet — kaikki saman
-            katon alta, ja tarvittaessa myös paikan päällä.
+            neljättä vuosikymmentä. Autot, traktorit ja työkoneet, kaikki saman
+            katon alta ja tarvittaessa myös paikan päällä.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -83,7 +83,7 @@ function HomePage() {
             </h3>
             <p className="mt-4 text-sm leading-7 text-white/85">
               Kalervo on huoltanut Kiuruveden autoja ja työkoneita vuodesta 1976. Sama
-              korjaamo, sama osoite, sama mies — nyt jo toisen sukupolven asiakkaiden
+              korjaamo, sama osoite, sama mies. Nyt jo toisen sukupolven asiakkaiden
               ehdoilla.
             </p>
             <a
@@ -123,11 +123,11 @@ function HomePage() {
 
       <section className="section-pad bg-[var(--surface-soft)]">
         <div className="shell">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--brand-accent)]">Palvelumme</p>
-          <h2 className="mt-2 font-[var(--font-display)] text-4xl text-[var(--text-strong)]">Palvelumme</h2>
-          <p className="mt-2 text-base text-[var(--text-body)]">Täyden palvelun korjaamo Pohjois-Savossa</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--brand-accent)]">Palvelut</p>
+          <h2 className="mt-3 font-[var(--font-display)] text-4xl font-bold text-[var(--text-strong)]">Täyden palvelun korjaamo Pohjois-Savossa</h2>
+          <p className="mt-3 max-w-2xl text-base leading-7 text-[var(--text-body)]">Autoille, traktoreille ja työkoneille. Tarvittaessa tulemme myös paikan päälle.</p>
 
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid auto-rows-fr gap-4 md:grid-cols-2 lg:grid-cols-4">
             {services.map((service) => {
               const Icon = service.icon
               return (
@@ -161,7 +161,7 @@ function HomePage() {
               {
                 title: 'Joustamme sinun aikataulusi mukaan',
                 description:
-                  'Sovimme ajan joka sopii sinulle — myös iltaisin ja viikonloppuisin tarvittaessa. Tulemme myös paikan päälle.',
+                  'Sovimme ajan joka sopii sinulle, myös iltaisin ja viikonloppuisin tarvittaessa. Tulemme myös paikan päälle.',
                 icon: Clock,
               },
               {

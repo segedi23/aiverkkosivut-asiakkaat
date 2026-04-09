@@ -10,7 +10,7 @@ function VaihtoautotPage() {
     <>
       <Seo
         title="Vaihtoautot | Autokossi"
-        description="Autokossin vaihtoautovalikoima Nettiautossa. Tarjoamme myös autorahoituksen — luottopäätökset 24/7."
+        description="Autokossin vaihtoautovalikoima Nettiautossa. Tarjoamme myös autorahoituksen, luottopäätökset 24/7."
       />
 
       <section className="bg-[var(--bg-dark)] text-white">
@@ -70,7 +70,7 @@ function VaihtoautotPage() {
 
             <p className="mt-6 rounded-xl bg-[var(--surface-soft)] px-4 py-3 text-xs text-[var(--text-muted)]">
               Jos Nettiauto-linkkimme ei näytä juuri nyt yhtään autoa, meillä ei
-              sillä hetkellä ole myynnissä kohteita. Uusia tulee säännöllisesti —
+              sillä hetkellä ole myynnissä kohteita. Uusia tulee säännöllisesti,
               tai kysy suoraan, minkälaista autoa etsit.
             </p>
           </div>

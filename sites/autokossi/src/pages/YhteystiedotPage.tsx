@@ -69,7 +69,7 @@ function YhteystiedotPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--brand-accent)]">Yhteystiedot</p>
           <h1 className="mt-3 font-[var(--font-display)] text-4xl font-bold sm:text-5xl">Ota yhteyttä</h1>
           <p className="mt-4 max-w-2xl text-base leading-8 text-white/80">
-            Soita, lähetä sähköpostia tai täytä lomake. Vastaamme mahdollisimman pian — myös iltaisin ja viikonloppuisin sopimuksesta.
+            Soita, lähetä sähköpostia tai täytä lomake. Vastaamme mahdollisimman pian, myös iltaisin ja viikonloppuisin sopimuksesta.
           </p>
         </div>
       </section>
@@ -138,7 +138,7 @@ function YhteystiedotPage() {
                 ))}
               </div>
               <p className="mt-4 text-xs text-[var(--text-muted)]">
-                Työt sopimuksesta myös viikonloppuisin — soita ja kysy.
+                Työt sopimuksesta myös viikonloppuisin. Soita ja kysy.
               </p>
             </div>
           </div>

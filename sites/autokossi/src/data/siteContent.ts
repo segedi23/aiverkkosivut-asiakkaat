@@ -6,7 +6,7 @@ import {
 export const business = {
   brandName: 'Autokossi',
   legalName: 'Kori- ja Konekorjaamo Kossi Ky',
-  tagline: 'Sama korjaamo, sama yrittäjä, sama osoite — Kiuruvedessä vuodesta 1976',
+  tagline: 'Sama korjaamo, sama yrittäjä, sama osoite. Kiuruvedessä vuodesta 1976.',
   city: 'Kiuruvesi',
   district: 'Pohjois-Savo',
   addressStreet: 'Kievarintie 9 B 3',
@@ -20,11 +20,11 @@ export const business = {
   facebook: '',
   instagram: '',
   intro:
-    'Kalervo Kossi on huoltanut Kiuruveden autoja vuodesta 1976 lähtien. Korjaamme kaikki tutut autot — henkilö- ja pakettiautot, asuntoautot ja -vaunut — mutta myös ne joita muut eivät ota: traktorit ja työkoneet. Tarvittaessa tulemme paikan päälle tilallesi tai työmaalle. Varaosat tilaamme Örumilta, yleensä saat ne seuraavaksi päiväksi.',
+    'Kalervo Kossi on huoltanut Kiuruveden autoja vuodesta 1976 lähtien. Korjaamme kaikki tutut autot: henkilö- ja pakettiautot, asuntoautot ja -vaunut. Mutta myös ne joita muut eivät ota: traktorit ja työkoneet. Tarvittaessa tulemme paikan päälle tilallesi tai työmaalle. Varaosat tilaamme Örumilta, yleensä saat ne seuraavaksi päiväksi.',
   openingSummary: 'Ma–Pe 8–16, La–Su sopimuksen mukaan',
   businessId: '0672296-0',
   dropoffNote:
-    'Voit sopia puhelimitse myös sellaisen ajan, joka sopii omaan aikatauluusi — teemme töitä tarvittaessa myös iltaisin ja viikonloppuisin.',
+    'Voit sopia puhelimitse myös sellaisen ajan, joka sopii omaan aikatauluusi. Teemme töitä tarvittaessa myös iltaisin ja viikonloppuisin.',
 }
 
 export const navigation = [
@@ -91,14 +91,14 @@ export const services = [
     name: 'Tuulilasin vaihto',
     icon: Car,
     description:
-      'Tuulilasin vaihto nopealla toimituksella — yleensä 1–3 arkipäivää. Hoidamme lasin tilauksen ja vaihdon samalla käynnillä.',
+      'Tuulilasin vaihto nopealla toimituksella, yleensä 1–3 arkipäivässä. Hoidamme lasin tilauksen ja vaihdon samalla käynnillä.',
   },
   {
     slug: 'traktorit-tyokoneet',
     name: 'Traktorit ja työkoneet',
     icon: Tractor,
     description:
-      'Maatalous- ja teollisuuskoneiden huollot ja korjaukset. Tarvittaessa tulemme paikan päälle tilallesi tai työmaalle — omilla työkaluilla ja varaosilla.',
+      'Maatalous- ja teollisuuskoneiden huollot ja korjaukset. Tarvittaessa tulemme paikan päälle tilallesi tai työmaalle omilla työkaluilla ja varaosilla.',
   },
 ]
 
@@ -134,7 +134,7 @@ export const processSteps = [
   {
     title: 'Tuo auto',
     description:
-      'Sovitaan sinulle sopiva aika. Tarvittaessa tulemme paikan päälle tilallesi — erityisesti traktoreille ja työkoneille.',
+      'Sovitaan sinulle sopiva aika. Tarvittaessa tulemme paikan päälle tilallesi, erityisesti traktoreille ja työkoneille.',
   },
   {
     title: 'Nouda valmis',
@@ -147,7 +147,7 @@ export const faqItems = [
   {
     question: 'Huollatteko traktoreita ja työkoneita?',
     answer:
-      'Kyllä. Maatalous- ja työkoneet ovat yksi pääasioistamme. Tarvittaessa tulemme suoraan tilallesi tai työmaalle — emme vaadi että kone kuljetetaan meille.',
+      'Kyllä. Maatalous- ja työkoneet ovat yksi pääasioistamme. Tarvittaessa tulemme suoraan tilallesi tai työmaalle. Emme vaadi että kone kuljetetaan meille.',
   },
   {
     question: 'Teettekö töitä viikonloppuisin?',

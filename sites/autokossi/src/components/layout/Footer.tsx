@@ -23,7 +23,7 @@ function Footer() {
               </span>
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-7 text-white/70">
-              Kori- ja Konekorjaamo Kossi Ky — autoalan palveluita jo 49 vuotta.
+              Kori- ja Konekorjaamo Kossi Ky. Autoalan palveluita jo 49 vuotta.
             </p>
           </div>
 

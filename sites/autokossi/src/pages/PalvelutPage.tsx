@@ -16,7 +16,7 @@ function PalvelutPage() {
     <>
       <Seo
         title="Korjaamopalvelut | Autokossi"
-        description="Huollamme ja korjaamme henkilö- ja pakettiautot, asuntoautot ja -vaunut, traktorit sekä työkoneet Kiuruvedellä — jo 49 vuoden kokemuksella."
+        description="Huollamme ja korjaamme henkilö- ja pakettiautot, asuntoautot ja -vaunut, traktorit sekä työkoneet Kiuruvedellä, jo 49 vuoden kokemuksella."
       />
 
       <section className="bg-[var(--bg-dark)] text-white">
@@ -27,7 +27,7 @@ function PalvelutPage() {
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-white/80">
             Korjaamme kaikki yleisimmät automerkit, mutta myös traktorit, työkoneet
-            ja asuntoautot — samalta mieheltä, samalla osoitteella vuodesta 1976.
+            ja asuntoautot. Samalta mieheltä, samalla osoitteella vuodesta 1976.
             Neljän vuosikymmenen aikana kohdatut viat ovat enimmäkseen jo tuttuja.
           </p>
 
@@ -87,11 +87,11 @@ function PalvelutPage() {
               Erikoisalueemme
             </p>
             <h2 className="mt-3 font-[var(--font-display)] text-3xl font-bold text-[var(--text-strong)] sm:text-4xl">
-              Traktorit ja työkoneet — myös paikan päällä
+              Traktorit ja työkoneet, myös paikan päällä
             </h2>
             <p className="mt-4 leading-8 text-[var(--text-body)]">
               Maatalous- ja teollisuuskoneet ovat meille tuttuja. Tarvittaessa tulemme
-              huoltamaan koneet suoraan tilallesi tai työmaalle — omilla työkaluilla ja
+              huoltamaan koneet suoraan tilallesi tai työmaalle omilla työkaluilla ja
               varaosilla. Näin säästyy turha kuljetusreissu eikä työ keskeydy pitkäksi
               aikaa.
             </p>

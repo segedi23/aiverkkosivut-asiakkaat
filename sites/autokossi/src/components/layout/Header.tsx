@@ -32,7 +32,7 @@ function Header() {
           <Link to="/" className="shrink-0" aria-label="Autokossi etusivu">
             <img
               src="/images/logo.png"
-              alt="Autokossi — Kori- ja Konekorjaamo Kossi Ky"
+              alt="Autokossi, Kori- ja Konekorjaamo Kossi Ky"
               className="h-9 w-auto"
             />
           </Link>
@@ -59,10 +59,10 @@ function Header() {
 
           <a
             href={business.phoneLink}
-            className="hidden items-center gap-2 rounded-full bg-[var(--brand-primary)] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[var(--brand-primary-dark)] lg:inline-flex"
+            className="hidden shrink-0 items-center gap-2 whitespace-nowrap rounded-full bg-[var(--brand-primary)] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[var(--brand-primary-dark)] lg:inline-flex"
           >
-            <Phone className="h-4 w-4" />
-            0400 654 758
+            <Phone className="h-4 w-4 shrink-0" />
+            <span className="whitespace-nowrap">{business.phoneDisplay}</span>
           </a>
 
           <button

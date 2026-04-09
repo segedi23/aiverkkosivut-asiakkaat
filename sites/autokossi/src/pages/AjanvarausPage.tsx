@@ -94,7 +94,7 @@ function AjanvarausPage() {
                 Kiitos ajanvarauspyynnöstä!
               </h2>
               <p className="mt-3 text-[var(--text-body)]">
-                Olemme sinuun yhteydessä mahdollisimman pian — yleensä saman päivän aikana.
+                Olemme sinuun yhteydessä mahdollisimman pian, yleensä saman päivän aikana.
               </p>
               <p className="mt-2 text-sm text-[var(--text-muted)]">
                 Jos asia on kiireellinen, soita {business.phoneDisplay}.
@@ -185,7 +185,7 @@ function AjanvarausPage() {
 
               <p className="mt-6 text-xs text-[var(--text-muted)]">
                 Vahvistamme varauksen puhelimitse tai sähköpostitse. Tiedot auttavat
-                meitä varaamaan oikeat varaosat valmiiksi — säästät yhden käyntikerran.
+                meitä varaamaan oikeat varaosat valmiiksi. Säästät yhden käyntikerran.
               </p>
             </form>
           )}
