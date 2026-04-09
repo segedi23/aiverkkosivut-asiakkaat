@@ -73,8 +73,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/15 pt-6 text-xs text-white/55">
-          © 2026 Länsiväylän Auto ja Konekorjaamo Ky · Y-tunnus 0514694-9
+        <div className="mt-10 flex flex-col gap-3 border-t border-white/15 pt-6 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 Länsiväylän Auto ja Konekorjaamo Ky · Y-tunnus 0514694-9</p>
+          <Link to="/tietosuoja" className="hover:text-white">
+            Tietosuojaseloste
+          </Link>
         </div>
       </div>
     </footer>

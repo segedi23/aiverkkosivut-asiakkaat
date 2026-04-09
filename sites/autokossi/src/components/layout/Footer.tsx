@@ -87,9 +87,14 @@ function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-start justify-between gap-2 border-t border-white/15 pt-6 text-xs text-white/55 md:flex-row md:items-center">
+        <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-white/15 pt-6 text-xs text-white/55 md:flex-row md:items-center">
           <p>© 2026 Kori- ja Konekorjaamo Kossi Ky · Y-tunnus 0672296-0</p>
-          <p>Autoalan palveluita jo vuodesta 1976</p>
+          <div className="flex items-center gap-4">
+            <Link to="/tietosuoja" className="hover:text-white">
+              Tietosuojaseloste
+            </Link>
+            <span>Autoalan palveluita jo vuodesta 1976</span>
+          </div>
         </div>
       </div>
     </footer>
