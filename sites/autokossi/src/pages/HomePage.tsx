@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import {
   business,
   faqItems,
-  heroImages,
   localBusinessSchema,
   openingHours,
   processSteps,
@@ -23,20 +22,29 @@ function HomePage() {
       />
 
       <section className="section-pad relative overflow-hidden bg-[var(--bg-dark)] text-white">
+        {/* Decorative grid pattern — ei stock-kuvaa koska aitoja korjaamokuvia ei ole */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-35"
-          style={{ backgroundImage: `url('${heroImages[0]}')` }}
+          className="absolute inset-0 opacity-[0.08]"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle at 1px 1px, rgba(230,126,34,0.6) 1px, transparent 0)',
+            backgroundSize: '32px 32px',
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(11,26,43,0.94)] via-[rgba(11,26,43,0.8)] to-[rgba(11,26,43,0.7)]" />
+        <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-[var(--brand-primary)]/15 to-transparent" />
 
         <div className="shell relative">
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--brand-accent)]">
             Kiuruvesi · Autokorjaamo · Vuodesta 1976
           </p>
           <h1 className="mt-4 max-w-3xl font-[var(--font-display)] text-5xl leading-tight sm:text-6xl">
-            49 vuotta kokemusta autoalalla
+            Sama korjaamo, sama yrittäjä — vuodesta 1976
           </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">{business.tagline}</p>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
+            Kori- ja Konekorjaamo Kossi Ky palvelee Kiuruveden autoilijoita jo
+            neljättä vuosikymmentä. Autot, traktorit ja työkoneet — kaikki saman
+            katon alta, ja tarvittaessa myös paikan päällä.
+          </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -65,26 +73,40 @@ function HomePage() {
       </section>
 
       <section className="section-pad bg-white">
-        <div className="shell grid gap-10 lg:grid-cols-2 lg:items-center">
-          <img
-            src={heroImages[1]}
-            alt="Autokossin korjaamotilat"
-            className="h-full max-h-[520px] w-full rounded-2xl border border-[var(--line)] object-cover"
-          />
+        <div className="shell grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div className="rounded-2xl bg-[var(--brand-primary)] p-8 text-white shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--brand-accent)]">
+              Yrittäjä
+            </p>
+            <h3 className="mt-3 font-[var(--font-display)] text-3xl font-bold leading-tight">
+              Kalervo Kossi
+            </h3>
+            <p className="mt-4 text-sm leading-7 text-white/85">
+              Kalervo on huoltanut Kiuruveden autoja ja työkoneita vuodesta 1976. Sama
+              korjaamo, sama osoite, sama mies — nyt jo toisen sukupolven asiakkaiden
+              ehdoilla.
+            </p>
+            <a
+              href={business.phoneLink}
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-[var(--brand-accent)] px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-[var(--brand-accent-dark)]"
+            >
+              Soita Kalervolle: {business.phoneDisplay}
+            </a>
+          </div>
 
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--brand-accent)]">
-              PERHEYRITYS KIURUVEDELLÄ
+              Kori- ja Konekorjaamo Kossi Ky
             </p>
             <h2 className="mt-3 font-[var(--font-display)] text-4xl leading-tight text-[var(--text-strong)]">
-              Vankkaa autoalan osaamista jo neljän vuosikymmenen ajalta
+              Neljä vuosikymmentä samaa osoitetta Kievarintiellä
             </h2>
             <p className="mt-4 text-base leading-8 text-[var(--text-body)]">{business.intro}</p>
 
             <p className="mt-6 text-sm font-semibold text-[var(--text-strong)]">
-              Huollamme monipuolisesti: henkilöautot, pakettiautot, asuntoautot ja -vaunut, traktorit, työkoneet
+              Mitä huollamme:
             </p>
-            <div className="mt-4 grid gap-2 sm:grid-cols-2">
+            <div className="mt-3 grid gap-2 sm:grid-cols-2">
               {vehicleTypes.map((vehicle) => {
                 const Icon = vehicle.icon
                 return (

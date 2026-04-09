@@ -6,7 +6,7 @@ import {
 export const business = {
   brandName: 'Autokossi',
   legalName: 'Kori- ja Konekorjaamo Kossi Ky',
-  tagline: 'Autoalan palveluita jo 49 vuotta — Kiuruveden luotetuin korjaamo',
+  tagline: 'Sama korjaamo, sama yrittäjä, sama osoite — Kiuruvedessä vuodesta 1976',
   city: 'Kiuruvesi',
   district: 'Pohjois-Savo',
   addressStreet: 'Kievarintie 9 B 3',
@@ -20,7 +20,7 @@ export const business = {
   facebook: '',
   instagram: '',
   intro:
-    'Kori- ja Konekorjaamo Kossi Ky on Kiuruvedellä vuodesta 1976 toiminut autokorjaamo ja varaosamyymälä. Huollamme ja korjaamme henkilö- ja pakettiautot, asuntoautot ja -vaunut, traktorit sekä työkoneet — samalla ammattitaidolla, merkistä riippumatta. Varaosat saat nopeasti meiltä Örum-yhteistyökumppanin kautta, ja tarvittaessa tulemme tekemään työt myös asiakkaan tiloihin esimerkiksi maatiloille tai teollisuuteen.',
+    'Kalervo Kossi on huoltanut Kiuruveden autoja vuodesta 1976 lähtien. Korjaamme kaikki tutut autot — henkilö- ja pakettiautot, asuntoautot ja -vaunut — mutta myös ne joita muut eivät ota: traktorit ja työkoneet. Tarvittaessa tulemme paikan päälle tilallesi tai työmaalle. Varaosat tilaamme Örumilta, yleensä saat ne seuraavaksi päiväksi.',
   openingSummary: 'Ma–Pe 8–16, La–Su sopimuksen mukaan',
   businessId: '0672296-0',
   dropoffNote:
@@ -76,7 +76,7 @@ export const services = [
     name: 'Ruostevauriot ja hitsaustyöt',
     icon: Hammer,
     description:
-      'Ruostevauriokorjaukset, katsastuskorjaukset ja muut hitsaustyöt ammattitaidolla. Myös traktoreiden ja työkoneiden runkotyöt.',
+      'Ruostevauriokorjaukset, katsastuskorjaukset ja muut hitsaustyöt. Myös traktoreiden ja työkoneiden runkotyöt.',
   },
   {
     slug: 'lisavarusteet',
@@ -126,57 +126,42 @@ export const pricingHighlights: { title: string; price: string; description: str
 
 export const processSteps = [
   {
-    title: 'Ota yhteyttä',
+    title: 'Soita',
     description:
-      'Soita 0400 654 758 tai lähetä viesti. Kerro auton merkki, malli, rekisterinumero ja ajokilometrit, niin varmistamme oikeat varaosat ja ajankohtaisen huolto-ohjelman.',
+      'Soita 0400 654 758. Kerro auton merkki, malli ja rekisterinumero, niin tilaamme oikeat osat valmiiksi.',
   },
   {
-    title: 'Sovitaan aika',
+    title: 'Tuo auto',
     description:
-      'Sovimme sinulle sopivan ajan huoltoon tai korjaukseen. Tarvittaessa teemme työt myös viikonloppuisin tai tulemme paikan päälle.',
-  },
-  {
-    title: 'Tuo auto korjaamolle',
-    description:
-      'Tuo ajoneuvo sovittuna aikana Kievarintielle. Varaosat ovat useimmiten saatavilla saman päivän aikana Örumin kautta.',
+      'Sovitaan sinulle sopiva aika. Tarvittaessa tulemme paikan päälle tilallesi — erityisesti traktoreille ja työkoneille.',
   },
   {
     title: 'Nouda valmis',
     description:
-      'Ilmoitamme puhelimitse kun auto on valmis. Käymme läpi tehdyt työt ja saat selvän laskun.',
+      'Soitamme kun auto on valmis. Käymme tehdyt työt läpi ja saat selvän laskun.',
   },
 ]
 
 export const faqItems = [
   {
-    question: 'Huollatteko kaikkia automerkkejä?',
+    question: 'Huollatteko traktoreita ja työkoneita?',
     answer:
-      'Kyllä, huollamme ja korjaamme kaikki yleisimmät automerkit. Meillä on 49 vuoden kokemus autoalalta, joten kohtaamme harvoin merkin jota emme tuntisi.',
+      'Kyllä. Maatalous- ja työkoneet ovat yksi pääasioistamme. Tarvittaessa tulemme suoraan tilallesi tai työmaalle — emme vaadi että kone kuljetetaan meille.',
   },
   {
     question: 'Teettekö töitä viikonloppuisin?',
     answer:
-      'Sopimuksesta kyllä. Jos sinulla on kiireellinen tarve, soita niin katsotaan mitä voidaan tehdä. Joustamme mielellämme.',
+      'Sopimuksesta kyllä. Soita, niin katsotaan mitä voidaan tehdä. Kiireellisiin asioihin joustamme mielellämme.',
   },
   {
-    question: 'Tuletteko paikan päälle?',
+    question: 'Kuinka nopeasti saan varaosat?',
     answer:
-      'Tulemme. Erityisesti maatalouden ja teollisuuden koneet huollamme tarvittaessa suoraan asiakkaan tiloissa. Ota yhteyttä niin arvioidaan tilanne.',
+      'Klo 14 mennessä tilatut Örum-osat saapuvat yleensä seuraavaksi päiväksi. Tuulilasit 1–3 arkipäivässä. Ulkomailta tilattavat osat noin viikossa.',
   },
   {
-    question: 'Kuinka nopeasti saan varaosan?',
+    question: 'Voiko samalla käynnillä hoitaa huollon ja katsastuskorjaukset?',
     answer:
-      'Klo 14 mennessä tilatut Örum-varaosat saapuvat yleensä seuraavaksi päiväksi. Tuulilasit 1–3 arkipäivässä. Ulkomailta tilattavat osat noin viikossa.',
-  },
-  {
-    question: 'Voiko saman käynnin aikana hoitaa huollon ja katsastuskorjaukset?',
-    answer:
-      'Kyllä voi. Ilmoita katsastusvaraus meille ajoissa, niin varaamme kaiken tarvittavan valmiiksi. Säästät yhden käyntikerran.',
-  },
-  {
-    question: 'Myyttekö myös vaihtoautoja?',
-    answer:
-      'Kyllä. Katso ajantasainen valikoima Nettiautosta tai soita suoraan Kalervolle 0400 654 758.',
+      'Kyllä voi, ja kannattaa. Kerro katsastusajasta ajoissa, niin teemme kaiken tarvittavan samalla kertaa ja säästät yhden käyntikerran.',
   },
 ]
 
