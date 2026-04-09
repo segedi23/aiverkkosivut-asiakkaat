@@ -26,9 +26,9 @@ function PalvelutPage() {
             Täyden palvelun korjaamo Kiuruvedellä
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-white/80">
-            Huollamme ja korjaamme henkilö- ja pakettiautot, asuntoautot ja -vaunut,
-            traktorit sekä työkoneet samalla ammattitaidolla — merkistä riippumatta.
-            49 vuoden kokemus takaa, että kohtaamme harvoin vikaa jota emme tuntisi.
+            Korjaamme kaikki yleisimmät automerkit, mutta myös traktorit, työkoneet
+            ja asuntoautot — samalta mieheltä, samalla osoitteella vuodesta 1976.
+            Neljän vuosikymmenen aikana kohdatut viat ovat enimmäkseen jo tuttuja.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
