@@ -149,5 +149,35 @@
       "business.intro",
       "openingHours"
     ]
+  },
+  {
+    "slug": "lansivayla-auto",
+    "domain": "lansivaylanauto.fi",
+    "businessName": "Länsiväylän Auto ja Konekorjaamo Ky",
+    "authorizedEmails": [
+      "janne@edustajanne.fi",
+      "korjaamo@lansivaylanauto.fi"
+    ],
+    "repoPath": "sites/lansivayla-auto",
+    "siteContentPath": "sites/lansivayla-auto/src/data/siteContent.ts",
+    "previewUrl": "https://lvauto.aiverkkosivut.fi",
+    "targetDomain": "https://www.lansivaylanauto.fi",
+    "industry": "raskaan-kaluston-korjaamo",
+    "netlifySiteId": "199c85b2-7fc1-4c7a-8ffb-dabb7d1c52c0",
+    "safeFields": [
+      "business.phoneDisplay",
+      "business.phoneLink",
+      "business.email",
+      "business.emailLink",
+      "business.addressStreet",
+      "business.postalCode",
+      "business.fullAddress",
+      "business.mapUrl",
+      "business.facebook",
+      "business.openingSummary",
+      "business.tagline",
+      "business.intro",
+      "openingHours"
+    ]
   }
 ]
