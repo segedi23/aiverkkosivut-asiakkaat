@@ -118,5 +118,36 @@
     "targetDomain": "https://sbsi.fi",
     "previewUrl": "https://sbs.aiverkkosivut.fi",
     "netlifySiteId": "1f1501ef-bc65-4820-b584-2c8a993ee53e"
+  },
+  {
+    "slug": "autokossi",
+    "domain": "autokossi.fi",
+    "businessName": "Kori- ja Konekorjaamo Kossi Ky",
+    "authorizedEmails": [
+      "janne@edustajanne.fi",
+      "kalervo.kossi@autokossi.fi"
+    ],
+    "repoPath": "sites/autokossi",
+    "siteContentPath": "sites/autokossi/src/data/siteContent.ts",
+    "previewUrl": "https://autokossi.aiverkkosivut.fi",
+    "targetDomain": "https://www.autokossi.fi",
+    "industry": "autokorjaamo",
+    "netlifySiteId": "7f45ec17-01d2-44c1-aa08-811890f1d8bf",
+    "safeFields": [
+      "business.phoneDisplay",
+      "business.phoneLink",
+      "business.email",
+      "business.emailLink",
+      "business.addressStreet",
+      "business.postalCode",
+      "business.fullAddress",
+      "business.mapUrl",
+      "business.facebook",
+      "business.instagram",
+      "business.openingSummary",
+      "business.tagline",
+      "business.intro",
+      "openingHours"
+    ]
   }
 ]
